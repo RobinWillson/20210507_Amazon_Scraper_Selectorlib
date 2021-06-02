@@ -3,7 +3,7 @@ import requests
 import json 
 from time import sleep
 
-
+output_filename = "urls.txt"
 # Create an Extractor by reading from the YAML file
 e = Extractor.from_yaml_file('selectors.yml')
 
@@ -36,7 +36,7 @@ def scrape(url):
     return e.extract(r.text)
 
 # product_data = []
-with open("urls.txt",'r') as urllist, open('output.jsonl','w') as outfile:
+with open(output_filename,'r') as urllist, open('output.jsonl','w') as outfile:
     for url in urllist.read().splitlines():
         data = scrape(url) 
         if data:
