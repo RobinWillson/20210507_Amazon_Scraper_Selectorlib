@@ -49,4 +49,9 @@ For better orginize your resule, you canmodify <code>output_filename</code> as y
 * As amazon always ban your action if you scrape too much, B00_amz_searcht_results has some basic setup to avoid the ban.
 * <code>'user-agent' : ua.random</code> this code fake you access website by random browser.
 * <code>proxies={...}</code> here you can input proxies for better fake access.
-* You can get proxies by <code>get_proxy.py</code>
+* By <code>get_proxy.py</code> you can get some free proxies, but I don't recommand this solution. <br>
+Here are some reason :
+    * test free proxies is time consuming
+    * in my experience, about 5 of 200 free proxies is tested successful.
+    * endup amazon also ban free proxies quickly
+* So if you really need proxies solution, I still suggest using paid solution.
